@@ -57,7 +57,6 @@ Movie-list is a web application that shows movie information from a csv file.
 
 ```
 <br/>
-============================
 
 # Project Setup on local
 ```
@@ -68,17 +67,15 @@ Movie-list is a web application that shows movie information from a csv file.
 
 cd .\backend 
 npm install
-```
+
 cd .\client 
 npm install
-
-```
 
 - Step 3: Run local server, client
 
 cd .\backend 
 npm run start
-```
+
 cd .\client 
 npm run start
 
