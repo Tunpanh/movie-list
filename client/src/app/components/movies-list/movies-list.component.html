@@ -1,0 +1,19 @@
+<p-table [columns]="columns" [value]="movies" [paginator]="true" [rows]="10">
+    <ng-template pTemplate="caption">
+  Movies List
+    </ng-template>
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th *ngFor="let col of columns">
+                {{col.header}}
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-movie let-columns="columns">
+        <tr>
+            <td *ngFor="let col of columns">
+                {{movie[col.field]}}
+            </td>
+        </tr>
+    </ng-template>
+  </p-table>
